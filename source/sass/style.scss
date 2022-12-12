@@ -13,27 +13,33 @@
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
-@import "global/container";
 
 // Blocks
 // ---------------------------------
 
 @import "blocks/main-header";
 @import "blocks/container";
-@import "blocks/menu";
-@import "blocks/main-block";
+@import "blocks/navigation-header";
 @import "blocks/logo";
-@import "blocks/navigation";
-@import "blocks/promo-block";
+@import "blocks/intro";
+@import "blocks/title";
+@import "blocks/about";
+@import "blocks/membership";
+@import "blocks/promo";
+@import "blocks/coaches";
+@import "blocks/coach";
 @import "blocks/advantages";
-@import "blocks/cruises";
-@import "blocks/card";
-@import "blocks/booking";
+@import "blocks/stocks";
+@import "blocks/stock";
+@import "blocks/reviews";
+@import "blocks/review";
+@import "blocks/quote";
+@import "blocks/application";
 @import "blocks/form";
 @import "blocks/contacts";
 @import "blocks/main-footer";
+@import "blocks/navigation-footer";
 @import "blocks/social";
-@import "blocks/title";
 
 // ---------------------------------
 
