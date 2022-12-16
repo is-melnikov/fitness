@@ -453,6 +453,7 @@ html {
   line-height: 24px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #000000;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -578,6 +579,7 @@ button,
 
 .wrapper {
   position: relative;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -685,6 +687,12 @@ button,
   -ms-flex-align: center;
   align-items: center;
   padding: 120px 50px 120px 110px;
+}
+
+.container--membership {
+  position: relative;
+  padding: 120px 50px;
+  text-align: center;
 }
 
 .navigation-header {
@@ -886,6 +894,170 @@ button,
 
 .video__button:hover {
   opacity: 0.5;
+}
+
+.membership {
+  background-color: #f8f9fc;
+}
+
+.membersihp__title {
+  margin: 0 0 25px;
+}
+
+.membership__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 46px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto 40px;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+
+.membership__item {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.membership__item--current .membership__link {
+  color: #102654;
+}
+
+.membership__item--current .membership__link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #d10a42;
+}
+
+.membership__link {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 20px;
+  color: rgba(16, 38, 84, 0.5);
+}
+
+.membership__list-card {
+  position: relative;
+  z-index: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(340px, 360px))[3];
+  grid-template-columns: repeat(3, minmax(340px, 360px));
+  gap: 40px;
+}
+
+.membership__image {
+  position: absolute;
+  bottom: -92px;
+  right: -162px;
+  display: block;
+  -webkit-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  transform: rotate(150deg);
+}
+
+.card {
+  padding: 68px 30px;
+  background-color: #ffffff;
+  border: 7px solid transparent;
+}
+
+.card:hover {
+  -o-border-image: -o-linear-gradient(315deg, #d10a42 0%, #00359f 100%);
+  border-image: linear-gradient(135deg, #d10a42 0%, #00359f 100%);
+  border-image-slice: 1;
+}
+
+.card:hover .card__button {
+  outline: 0;
+  color: #ffffff;
+  background: -o-linear-gradient(352.95deg, #ed0335 17.6%, #003eb7 95.31%);
+  background: linear-gradient(97.05deg, #ed0335 17.6%, #003eb7 95.31%);
+}
+
+.card__title {
+  margin: 0 0 22px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29px;
+  color: #102654;
+}
+
+.card__description {
+  margin: 0 0 59px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #495a7d;
+}
+
+.card__price {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 72%;
+  margin: 0 0 120px;
+}
+
+.card__price::before {
+  content: attr(data-parent);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 69px;
+  color: #e8e8e8;
+  opacity: 0.48;
+}
+
+.card__button {
+  padding: 27px 44px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #102654;
+  outline: 2px solid #102654;
+}
+
+.price__sum {
+  position: relative;
+  top: 25px;
+  left: 18px;
+  z-index: 1;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0;
+  padding-right: 44px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 42px;
+  color: #103aae;
+}
+
+.price__sum::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 42px;
+  background-image: url("../img/sprite/rouble.svg");
+  background-repeat: no-repeat;
 }
 
 /* @mixin hover-focus {

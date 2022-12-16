@@ -18,4 +18,18 @@
       padding: 70px 0;
     }
   }
+
+  &--membership {
+    position: relative;
+    padding: 120px 50px;
+    text-align: center;
+
+    @include vp-1199 {
+
+    }
+
+    @include vp-767 {
+
+    }
+  }
 }

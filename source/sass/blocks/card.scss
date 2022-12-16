@@ -1,0 +1,63 @@
+.card {
+  padding: 68px 30px;
+  background-color: $color-default-white;
+  border: 7px solid transparent;
+
+  &:hover {
+    border-image: linear-gradient(135deg, #d10a42 0%, #00359f 100%);
+    border-image-slice: 1;
+
+    .card__button {
+      outline: 0;
+      color: $color-default-white;
+      background: linear-gradient(97.05deg, #ed0335 17.6%, #003eb7 95.31%);
+    }
+  }
+}
+
+.card__title {
+  margin: 0 0 22px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29px;
+  color: $color-sapphire;
+}
+
+.card__description {
+  margin: 0 0 59px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #495a7d;
+}
+
+.card__price {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 72%;
+  margin: 0 0 120px;
+
+  &::before {
+    content: attr(data-parent);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 69px;
+    color: #e8e8e8;
+    opacity: 0.48;
+  }
+}
+
+.card__button {
+  padding: 27px 44px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-sapphire;
+  outline: 2px solid $color-sapphire;
+}
