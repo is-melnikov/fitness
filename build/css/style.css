@@ -900,7 +900,7 @@ button,
   background-color: #f8f9fc;
 }
 
-.membersihp__title {
+.membership__title {
   margin: 0 0 25px;
 }
 
@@ -950,8 +950,8 @@ button,
   z-index: 1;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(340px, 360px))[3];
-  grid-template-columns: repeat(3, minmax(340px, 360px));
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
 
@@ -1001,19 +1001,17 @@ button,
 
 .card__price {
   position: relative;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  width: 72%;
-  margin: 0 0 120px;
+  margin: 0 auto 120px;
 }
 
 .card__price::before {
   content: attr(data-parent);
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 0;
   font-weight: 700;
   font-size: 100px;
@@ -1035,13 +1033,13 @@ button,
 
 .price__sum {
   position: relative;
-  top: 25px;
-  left: 18px;
+  top: 36px;
+  left: 0;
   z-index: 1;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  margin: 0;
+  margin: 0 auto;
   padding-right: 44px;
   font-weight: 700;
   font-size: 60px;
@@ -1109,6 +1107,10 @@ button,
 
   .container--about {
     display: block;
+    padding: 100px 45px;
+  }
+
+  .container--membership {
     padding: 100px 45px;
   }
 
@@ -1206,6 +1208,32 @@ button,
   .video {
     width: 266px;
     height: 167px;
+  }
+
+  .membership__list {
+    gap: 54px;
+    margin: 0 auto 45px;
+  }
+
+  .membership__item {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .membership__list-card {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 118px;
+  }
+
+  .membership__image {
+    bottom: -77px;
+    right: -11px;
+    width: 289px;
+    height: 345px;
   }
 }
 

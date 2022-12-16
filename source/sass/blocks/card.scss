@@ -32,16 +32,17 @@
 
 .card__price {
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 72%;
-  margin: 0 0 120px;
+  margin: 0 auto 120px;
+
+  @include vp-1199 {
+  }
 
   &::before {
     content: attr(data-parent);
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 0;
     font-weight: 700;
     font-size: 100px;
