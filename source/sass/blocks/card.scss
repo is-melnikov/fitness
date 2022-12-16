@@ -21,6 +21,11 @@
   font-size: 26px;
   line-height: 29px;
   color: $color-sapphire;
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 24px;
+  }
 }
 
 .card__description {
@@ -33,9 +38,6 @@
 .card__price {
   position: relative;
   margin: 0 auto 120px;
-
-  @include vp-1199 {
-  }
 
   &::before {
     content: attr(data-parent);

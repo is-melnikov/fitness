@@ -1247,6 +1247,10 @@ button,
     padding: 70px 0;
   }
 
+  .container--membership {
+    padding: 70px 15px;
+  }
+
   .navigation-header__link {
     font-weight: 600;
     font-size: 20px;
@@ -1331,5 +1335,28 @@ button,
     width: 100%;
     height: auto;
     aspect-ratio: 320/167;
+  }
+
+  .membership__list {
+    gap: 45px;
+    margin: 0 auto 35px;
+  }
+
+  .membership__item {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .membership__list-card {
+    padding: 0;
+  }
+
+  .membership__image {
+    display: none;
+  }
+
+  .card__title {
+    font-size: 22px;
+    line-height: 24px;
   }
 }
