@@ -1432,6 +1432,12 @@ button,
     padding: 70px 15px;
   }
 
+  .container--promo {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    padding: 70px 15px 35px;
+  }
+
   .navigation-header__link {
     font-weight: 600;
     font-size: 20px;
@@ -1539,5 +1545,12 @@ button,
   .card__title {
     font-size: 22px;
     line-height: 24px;
+  }
+
+  .promo__text {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 50px 44px;
   }
 }

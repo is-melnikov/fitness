@@ -43,5 +43,10 @@
       grid-template-columns: 1fr 2fr;
       padding: 100px 45px;
     }
+
+    @include vp-767 {
+      grid-template-columns: 1fr;
+      padding: 70px 15px 35px;
+    }
   }
 }
