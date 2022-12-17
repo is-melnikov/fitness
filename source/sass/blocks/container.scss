@@ -32,4 +32,16 @@
       padding: 70px 15px;
     }
   }
+
+  &--promo {
+    display: grid;
+    grid-template-columns: 1fr 660px;
+    justify-content: center;
+    padding: 120px 50px 50px;
+
+    @include vp-1199 {
+      grid-template-columns: 1fr 2fr;
+      padding: 100px 45px;
+    }
+  }
 }
