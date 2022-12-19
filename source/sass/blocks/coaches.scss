@@ -26,3 +26,21 @@
     padding: 0 32px;
   }
 }
+
+.coaches__button {
+  position: absolute;
+  top: 50%;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  &--prev {
+    left: 0;
+  }
+
+  &--next {
+    right: 0;
+    transform: rotate(180deg);
+  }
+}

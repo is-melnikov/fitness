@@ -51,6 +51,7 @@
   }
 
   &--coaches {
+    position: relative;
     padding: 53px 47px 91px;
 
     @include vp-1199 {

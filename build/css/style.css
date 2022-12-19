@@ -707,6 +707,7 @@ button,
 }
 
 .container--coaches {
+  position: relative;
   padding: 53px 47px 91px;
 }
 
@@ -1193,6 +1194,26 @@ button,
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 40px;
+}
+
+.coaches__button {
+  position: absolute;
+  top: 50%;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.coaches__button--prev {
+  left: 0;
+}
+
+.coaches__button--next {
+  right: 0;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .coach {
