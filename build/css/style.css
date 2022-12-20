@@ -1578,6 +1578,10 @@ button,
   padding: 53px 103px 0;
 }
 
+.container--advantages {
+  padding: 146px 162px 91px 164px;
+}
+
 .navigation-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2048,6 +2052,7 @@ button,
 
 .promo__image {
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -2205,6 +2210,164 @@ button,
   background-color: #ffffff;
 }
 
+.advantages {
+  background-color: #f8f9fc;
+}
+
+.advantages__title {
+  margin: 0 0 55px;
+  text-align: center;
+}
+
+.advantages__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 340px 1fr 340px;
+  grid-template-columns: 340px 1fr 340px;
+  -webkit-column-gap: 60px;
+  -moz-column-gap: 60px;
+  column-gap: 60px;
+}
+
+.advantages__item {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding: 5px;
+}
+
+.advantages__item--square::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 340px;
+  height: 2px;
+  background-color: rgba(209, 10, 66, 0.2);
+}
+
+.advantages__item--parking::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 340px;
+  height: 2px;
+  background-color: rgba(209, 10, 66, 0.2);
+}
+
+.advantages__item--comfort {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+.advantages__item--experience {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+.advantages__item--middle {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  display: block;
+  padding: 66px 34px 65px;
+  text-align: center;
+  background-color: #1c3374;
+  color: #ffffff;
+}
+
+.advantages__item--middle b {
+  margin: 0 0 25px;
+  font-weight: 700;
+  font-size: 74px;
+  line-height: 111px;
+}
+
+.advantages__item--middle span {
+  margin: 0 0 50px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 39px;
+}
+
+.advantages__item--middle p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.advantages__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.advantages__data b {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 71px;
+  line-height: 56px;
+  background: -o-linear-gradient(322.39deg, #d10a42 0%, #0041ca 45.58%);
+  background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.advantages__data span {
+  font-size: 14px;
+  line-height: 21px;
+  color: #2e35ac;
+}
+
+.advantages__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-grid-column-align: start;
+  justify-self: start;
+}
+
+.advantages__text h3 {
+  margin: 0 0 20px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  color: #102654;
+}
+
+.advantages__text p {
+  text-align: start;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #102654;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -2269,6 +2432,10 @@ button,
 
   .container--coaches {
     padding: 50px 101px 0;
+  }
+
+  .container--advantages {
+    padding: 100px 45px;
   }
 
   .navigation-header {
@@ -2462,6 +2629,11 @@ button,
   .coach__content {
     padding: 58px 55px 55px 54px;
   }
+
+  .advantages__list {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2485,6 +2657,10 @@ button,
   }
 
   .container--coaches {
+    padding: 35px 47px 0;
+  }
+
+  .container--advantages {
     padding: 35px 47px 0;
   }
 
