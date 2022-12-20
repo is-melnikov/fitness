@@ -2060,6 +2060,14 @@ button,
   position: relative;
 }
 
+.coaches__nojs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
 .coaches__button {
   position: absolute;
   top: 64%;
@@ -2079,6 +2087,10 @@ button,
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
+}
+
+.coaches__button--nojs {
+  display: none;
 }
 
 .coach {
@@ -2437,6 +2449,12 @@ button,
     margin: 0 0 31px;
   }
 
+  .coaches__nojs {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
   .coach {
     aspect-ratio: 268/294;
   }
@@ -2588,6 +2606,11 @@ button,
 
   .coaches__title {
     margin: 0 0 50px;
+  }
+
+  .coaches__nojs {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .coaches__button--prev {

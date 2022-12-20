@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {playVideo} from './modules/modals/video';
+import {playVideo} from './modules/video';
+import {doWithoutJs} from './modules/slider';
 
 // ---------------------------------
 
@@ -19,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     playVideo();
+    doWithoutJs();
   });
 });
 
