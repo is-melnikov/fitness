@@ -359,33 +359,35 @@
           </div>
         </section>
         <section class="stocks">
-          <h2 class="stocks__title title">Акции</h2>
-          <ul class="stocks__list reset-list">
-            <li class="stocks__item stock stock--image">
-              <div class="stock__content">
-                <h3>
-                  Год
-                  <span>4999</span>
-                </h3>
-                <p>Безлимитный абонемент в тренажерный зал</p>
+          <div class="container container--stocks">
+            <h2 class="stocks__title title">Акции</h2>
+            <ul class="stocks__list reset-list">
+              <li class="stocks__item stocks__item--image">
+                <div class="stock__content">
+                  <h3>
+                    Год
+                    <span>4999</span>
+                  </h3>
+                  <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
+                  <a class="stock__link" href="#">подробнее</a>
+                </div>
+                <picture>
+                  <source type="image/webp" srcset="./img/stock-photo.webp, ./img/stock-photo@2x.webp 2x">
+                  <img class="stock__image" src="./img/stock-photo.jpg" srcset="./img/stock-photo@2x.jpg" width="280" height="462" alt="Спортивная женщина.">
+                </picture>
+              </li>
+              <li class="stocks__item stocks__item--free stock">
+                <h3>Месяц бесплатно</h3>
+                <p>Приведи друга, получи абонемент в подарок</p>
                 <a class="stock__link" href="#">подробнее</a>
-              </div>
-              <picture>
-                <source type="image/webp" srcset="./img/stock-photo.webp, ./img/stock-photo@2x.webp 2x">
-                <img class="promo__image" src="./img/stock-photo.jpg" srcset="./img/stock-photo@2x.jpg" width="280" height="462" alt="Спортивная женщина.">
-              </picture>
-            </li>
-            <li class="stocks__item stock">
-              <h3>Месяц бесплатно</h3>
-              <p>Приведи друга, получи абонемент в подарок</p>
-              <a class="stock__link" href="#">подробнее</a>
-            </li>
-            <li class="stocks__item stock">
-              <h3>Скидка 20%</h3>
-              <p>Корпоративный фитнес с командой</p>
-              <a class="stock__link" href="#">подробнее</a>
-            </li>
-          </ul>
+              </li>
+              <li class="stocks__item stocks__item--discount stock">
+                <h3>Скидка 20%</h3>
+                <p>Корпоративный фитнес с командой</p>
+                <a class="stock__link" href="#">подробнее</a>
+              </li>
+            </ul>
+          </div>
         </section>
         <section class="reviews">
           <h2 class="reviews__title title">Отзывы</h2>
