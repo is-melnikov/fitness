@@ -1,12 +1,21 @@
 .stocks__title {
   margin: 0 0 34px;
   text-align: center;
+
+  @include vp-1199 {
+    margin: 0 0 50px;
+  }
 }
 
 .stocks__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+
+  @include vp-1199 {
+    grid-template-rows: 2fr 1fr;
+    gap: 30px;
+  }
 }
 
 .stocks__item {
@@ -17,10 +26,15 @@
 
   &--image {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr max-content;
     grid-column: 1/2;
     grid-row: 1/3;
     padding: 0;
     border: none;
+
+    @include vp-1199 {
+      grid-column: 1/3;
+      grid-row: 1/2;
+    }
   }
 }
