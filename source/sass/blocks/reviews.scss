@@ -56,6 +56,13 @@
   }
 }
 
+.review__icon {
+  @include vp-767 {
+    width: 10px;
+    height: 19px;
+  }
+}
+
 .reviews__swiper {
   position: relative;
   margin: 0 300px;
@@ -69,18 +76,11 @@
   }
 }
 
-// .reviews__list {
-//   width: 560px;
-//   margin: 0 auto;
-
-//   @include vp-1199 {
-//     width: 566px;
-//   }
-
-//   @include vp-767 {
-//     width: 226px;
-//   }
-// }
+.reviews--nojs {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
 
 .reviews__item {
   padding: 62px 62px;

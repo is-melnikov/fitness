@@ -2554,6 +2554,14 @@ button,
   margin: 0 300px;
 }
 
+.reviews--nojs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
 .reviews__item {
   padding: 62px 62px;
   background: #1c3374;
@@ -3236,6 +3244,11 @@ button,
 
   .reviews__button--next {
     right: 22px;
+  }
+
+  .review__icon {
+    width: 10px;
+    height: 19px;
   }
 
   .reviews__swiper {
