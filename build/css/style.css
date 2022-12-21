@@ -1575,7 +1575,7 @@ button,
 
 .container--coaches {
   position: relative;
-  padding: 53px 103px 0;
+  padding: 53px 103px 91px;
 }
 
 .container--advantages {
@@ -2215,7 +2215,7 @@ button,
 }
 
 .advantages__title {
-  margin: 0 0 55px;
+  margin: 0 0 60px;
   text-align: center;
 }
 
@@ -2303,6 +2303,7 @@ button,
 }
 
 .advantages__item--middle p {
+  margin: 0;
   font-size: 16px;
   line-height: 24px;
 }
@@ -2433,7 +2434,7 @@ button,
   }
 
   .container--coaches {
-    padding: 50px 101px 0;
+    padding: 50px 101px 100px;
   }
 
   .container--advantages {
@@ -2632,9 +2633,21 @@ button,
     padding: 58px 55px 55px 54px;
   }
 
+  .advantages__title {
+    margin: 0 0 65px;
+  }
+
   .advantages__list {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .advantages__item--square::before {
+    display: none;
+  }
+
+  .advantages__item--parking::before {
+    display: none;
   }
 
   .advantages__item--middle {
@@ -2689,11 +2702,11 @@ button,
   }
 
   .container--coaches {
-    padding: 35px 47px 0;
+    padding: 35px 47px 70px;
   }
 
   .container--advantages {
-    padding: 35px 47px 0;
+    padding: 70px 0;
   }
 
   .navigation-header__link {
@@ -2831,5 +2844,54 @@ button,
 
   .coach__content {
     padding: 48px 33px;
+  }
+
+  .advantages__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 45px;
+  }
+
+  .advantages__item {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5px 37px;
+  }
+
+  .advantages__item--middle {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    padding: 50px 74px;
+  }
+
+  .advantages__item--middle b {
+    margin: 0 0 15px;
+  }
+
+  .advantages__item--middle span {
+    margin: 0 0 25px;
+  }
+
+  .advantages__data {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .advantages__text {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-grid-column-align: center;
+    justify-self: center;
+  }
+
+  .advantages__text p {
+    text-align: center;
   }
 }

@@ -3,8 +3,12 @@
 }
 
 .advantages__title {
-  margin: 0 0 55px;
+  margin: 0 0 60px;
   text-align: center;
+
+  @include vp-1199 {
+    margin: 0 0 65px;
+  }
 }
 
 .advantages__list {
@@ -14,6 +18,11 @@
 
   @include vp-1199 {
     grid-template-columns: 1fr 1fr;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    row-gap: 45px;
   }
 }
 
@@ -25,6 +34,13 @@
   justify-content: flex-start;
   padding: 5px;
 
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    width: 100%;
+    padding: 5px 37px;
+  }
+
   &--square {
     &::before {
       content: "";
@@ -34,6 +50,10 @@
       width: 340px;
       height: 2px;
       background-color: rgba(209, 10, 66, 0.2);
+
+      @include vp-1199 {
+        display: none;
+      }
     }
   }
 
@@ -46,6 +66,10 @@
       width: 340px;
       height: 2px;
       background-color: rgba(209, 10, 66, 0.2);
+
+      @include vp-1199 {
+        display: none;
+      }
     }
   }
 
@@ -73,6 +97,11 @@
     padding: 45px 135px;
   }
 
+  @include vp-767 {
+    grid-column: 1/2;
+    padding: 50px 74px;
+  }
+
   b {
     display: block;
     margin: 0 0 25px;
@@ -82,6 +111,10 @@
 
     @include vp-1199 {
       margin: 0 0 20px;
+    }
+
+    @include vp-767 {
+      margin: 0 0 15px;
     }
   }
 
@@ -97,9 +130,14 @@
       font-size: 22px;
       line-height: 33px;
     }
+
+    @include vp-767 {
+      margin: 0 0 25px;
+    }
   }
 
   p {
+    margin: 0;
     font-size: 16px;
     line-height: 24px;
   }
@@ -110,6 +148,10 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
+
+  @include vp-767 {
+    align-items: center;
+  }
 
   b {
     font-style: normal;
@@ -139,6 +181,11 @@
   align-items: flex-start;
   justify-self: start;
 
+  @include vp-767 {
+    align-items: center;
+    justify-self: center;
+  }
+
   h3 {
     margin: 0 0 20px;
     font-weight: 700;
@@ -158,5 +205,9 @@
     font-size: 16px;
     line-height: 22px;
     color: $color-sapphire;
+
+    @include vp-767 {
+      text-align: center;
+    }
   }
 }
