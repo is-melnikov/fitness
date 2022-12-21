@@ -38,6 +38,11 @@
   background-color: transparent;
   cursor: pointer;
 
+  @include vp-767 {
+    width: 10px;
+    height: 19px;
+  }
+
   &--prev {
     left: 47px;
 
@@ -57,5 +62,12 @@
 
   &--nojs {
     display: none;
+  }
+}
+
+.coaches__icon {
+  @include vp-767 {
+    width: 10px;
+    height: 19px;
   }
 }

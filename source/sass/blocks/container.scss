@@ -86,4 +86,17 @@
       padding: 70px 15px 35px;
     }
   }
+
+  &--reviews {
+    position: relative;
+    padding: 57px 103px 120px;
+
+    @include vp-1199 {
+      padding: 50px 45px 100px;
+    }
+
+    @include vp-767 {
+      padding: 35px 15px 70px;
+    }
+  }
 }

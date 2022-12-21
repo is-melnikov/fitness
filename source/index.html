@@ -295,12 +295,12 @@
               </ul>
             </div>
             <button class="coaches__button coaches__button--prev coaches__button--nojs" type="button">
-              <svg width="16" height="32">
+              <svg class="coaches__icon" width="16" height="32">
                 <use href="./img/sprite.svg#arrow"></use>
               </svg>
             </button>
             <button class="coaches__button coaches__button--next coaches__button--nojs" type="button">
-              <svg width="16" height="32">
+              <svg class="coaches__icon" width="16" height="32">
                 <use href="./img/sprite.svg#arrow"></use>
               </svg>
             </button>
@@ -381,14 +381,14 @@
               <li class="stocks__item stocks__item--free stock">
                 <div class="stock__wrapper">
                   <h3>Месяц бесплатно</h3>
-                  <p>Приведи друга, получи абонемент в подарок</p>
+                  <p>Приведи друга, получи абонемент в&nbsp;подарок</p>
                 </div>
                 <a class="stock__link" href="#">подробнее</a>
               </li>
               <li class="stocks__item stocks__item--discount stock">
                 <div class="stock__wrapper">
                   <h3>Скидка 20%</h3>
-                  <p>Корпоративный фитнес с командой</p>
+                  <p>Корпоративный фитнес с&nbsp;командой</p>
                 </div>
                 <a class="stock__link" href="#">подробнее</a>
               </li>
@@ -396,39 +396,45 @@
           </div>
         </section>
         <section class="reviews">
-          <h2 class="reviews__title title">Отзывы</h2>
-          <ul class="reviews__list reset-list">
-            <li class="reviews__item review">
-              <blockquote class="review__quote quote">
-                <picture>
-                  <source type="image/webp" srcset="./img/review-photo.webp, ./img/review-photo@2x.webp 2x">
-                  <img class="review__image" src="./img/review-photo.jpg" srcset="./img/review-photo@2x.jpg" width="80" height="80" alt="Автор отзыва.">
-                </picture>
-                <cite class="quote__author">Анна Орлова</cite>
-                <p class="quote__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-              </blockquote>
-            </li>
-            <li class="reviews__item review">
-              <blockquote class="review__quote quote">
-                <picture>
-                  <source type="image/webp" srcset="./img/review-photo.webp, ./img/review-photo@2x.webp 2x">
-                  <img class="review__image" src="./img/review-photo.jpg" srcset="./img/review-photo@2x.jpg" width="80" height="80" alt="Автор отзыва.">
-                </picture>
-                <cite class="quote__author">Мария Иванова</cite>
-                <p class="quote__text">«Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный»</p>
-              </blockquote>
-            </li>
-            <li class="reviews__item review">
-              <blockquote class="review__quote quote">
-                <picture>
-                  <source type="image/webp" srcset="./img/review-photo.webp, ./img/review-photo@2x.webp 2x">
-                  <img class="review__image" src="./img/review-photo.jpg" srcset="./img/review-photo@2x.jpg" width="80" height="80" alt="Автор отзыва.">
-                </picture>
-                <cite class="quote__author">Ольга Петрова</cite>
-                <p class="quote__text">«Зал просторный, даже в вечернее время нет очередей»</p>
-              </blockquote>
-            </li>
-          </ul>
+          <div class="container container--reviews">
+            <h2 class="reviews__title title">Отзывы</h2>
+            <button class="coaches__button coaches__button--prev coaches__button--nojs" type="button">
+              <svg class="coaches__icon" width="16" height="32">
+                <use href="./img/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+            <button class="coaches__button coaches__button--next coaches__button--nojs" type="button">
+              <svg class="coaches__icon" width="16" height="32">
+                <use href="./img/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+            <ul class="reviews__list reset-list">
+              <li class="reviews__item review">
+                <blockquote class="review__quote quote">
+                  <div class="quote__wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="./img/review-photo.webp, ./img/review-photo@2x.webp 2x">
+                      <img class="quote__image" src="./img/review-photo.jpg" srcset="./img/review-photo@2x.jpg" width="80" height="80" alt="Автор отзыва.">
+                    </picture>
+                  </div>
+                  <cite class="quote__author">Анна Орлова</cite>
+                  <p class="quote__text">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                </blockquote>
+              </li>
+              <li class="reviews__item review">
+                <blockquote class="review__quote quote">
+                  <div class="quote__wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="./img/review-photo.webp, ./img/review-photo@2x.webp 2x">
+                      <img class="quote__image" src="./img/review-photo.jpg" srcset="./img/review-photo@2x.jpg" width="80" height="80" alt="Автор отзыва.">
+                    </picture>
+                  </div>
+                  <cite class="quote__author">Мария Иванова</cite>
+                  <p class="quote__text">&laquo;Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный&raquo;</p>
+                </blockquote>
+              </li>
+            </ul>
+          </div>
         </section>
         <div class="wrapper">
           <section class="application">
