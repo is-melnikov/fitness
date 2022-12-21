@@ -13,8 +13,11 @@
   gap: 40px;
 
   @include vp-1199 {
-    grid-template-rows: 2fr 1fr;
     gap: 30px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -26,7 +29,7 @@
 
   &--image {
     display: grid;
-    grid-template-columns: 1fr max-content;
+    grid-template-columns: 1fr 1fr;
     grid-column: 1/2;
     grid-row: 1/3;
     padding: 0;
@@ -35,6 +38,12 @@
     @include vp-1199 {
       grid-column: 1/3;
       grid-row: 1/2;
+    }
+
+    @include vp-767 {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-column: 1/2;
     }
   }
 }
