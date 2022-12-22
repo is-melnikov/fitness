@@ -2703,6 +2703,64 @@ button,
   cursor: pointer;
 }
 
+.contacts {
+  padding: 56px 159px 70px 120px;
+  border-top: 1px solid #74819c;
+}
+
+.contacts__title {
+  margin: 0 0 43px;
+}
+
+.contacts__list {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 60px;
+  -moz-column-gap: 60px;
+  column-gap: 60px;
+  row-gap: 30px;
+}
+
+.contacts__list::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 1px;
+  height: 100%;
+  background-color: #74819c;
+}
+
+.contacts__item {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #102654;
+}
+
+.contacts__item h3 {
+  margin: 0 0 15px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.contacts__item p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.contacts__item a {
+  font-size: 14px;
+  line-height: 21px;
+  color: inherit;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
