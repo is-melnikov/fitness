@@ -17,6 +17,11 @@
   }
 }
 
+.blocks-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .rouble {
   font-family: $ff-rouble;
   /* stylelint-disable */

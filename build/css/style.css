@@ -1471,6 +1471,13 @@ button,
   flex-grow: 1;
 }
 
+.blocks-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
 .rouble {
   font-family: "Rouble", "Arial", sans-serif;
   /* stylelint-disable */
@@ -1700,6 +1707,11 @@ button,
   line-height: 65px;
   letter-spacing: 0.03em;
   color: #102654;
+}
+
+.title--application {
+  line-height: 84px;
+  color: #ffffff;
 }
 
 .title--about {
@@ -2607,6 +2619,88 @@ button,
   margin: 0;
   font-size: 16px;
   line-height: 22px;
+}
+
+.application {
+  padding: 56px 103px 70px;
+  background-color: #102654;
+}
+
+.application__title {
+  margin: 0 0 24px;
+}
+
+.form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.form input {
+  padding: 10px 10px 10px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #74819c;
+}
+
+.form input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.form input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.form input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.form input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.form input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.form button {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  width: 100%;
+  padding: 21px;
+  border-style: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  border: 3px solid #ffffff;
+  cursor: pointer;
 }
 
 /* @mixin hover-focus {
