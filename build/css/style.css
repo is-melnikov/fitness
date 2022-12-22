@@ -3675,9 +3675,15 @@ button,
 
   .navigation-footer__list {
     display: block;
+    width: 290px;
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
+  }
+
+  .navigation-footer__item {
+    font-size: 16px;
+    line-height: 19px;
   }
 
   .navigation-footer__item--logo {
