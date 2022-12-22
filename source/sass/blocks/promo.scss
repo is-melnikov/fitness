@@ -96,6 +96,14 @@
       line-height: 12px;
       border: 2px solid $color-default-white;
     }
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 

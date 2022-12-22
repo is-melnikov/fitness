@@ -63,9 +63,15 @@
   &--nojs {
     display: none;
   }
+
+  &:hover:not(:disabled) .coaches__icon {
+    stroke: $color-sapphire;
+  }
 }
 
 .coaches__icon {
+  stroke: #afafaf;
+
   @include vp-767 {
     width: 10px;
     height: 19px;

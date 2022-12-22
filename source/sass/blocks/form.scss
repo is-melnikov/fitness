@@ -28,6 +28,14 @@
       line-height: 16px;
       color: $color-default-white;
     }
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   button {
@@ -48,6 +56,14 @@
 
     @include vp-767 {
       grid-column: 1/2;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 }

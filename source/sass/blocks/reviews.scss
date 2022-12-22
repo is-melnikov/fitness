@@ -54,9 +54,15 @@
     opacity: 0.5;
     cursor: default;
   }
+
+  &:hover:not(:disabled) .reviews__icon {
+    stroke: $color-sapphire;
+  }
 }
 
-.review__icon {
+.reviews__icon {
+  stroke: #afafaf;
+
   @include vp-767 {
     width: 10px;
     height: 19px;
