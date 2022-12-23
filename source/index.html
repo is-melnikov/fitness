@@ -82,42 +82,100 @@
           <div class="container container--membership">
             <h2 class="membership__title title">Абонементы</h2>
             <ul class="membership__list reset-list">
-              <li class="membership__item membership__item--current">
-                <a class="membership__link" href="#">1 месяц</a>
+              <li class="membership__item">
+                <button class="membership__button membership__button--current" type="button" data-target="#tab-1">1 месяц</button>
               </li>
               <li class="membership__item">
-                <a class="membership__link" href="#">6 месяцев</a>
+                <button class="membership__button" type="button" data-target="#tab-6">6 месяцев</button>
               </li>
               <li class="membership__item">
-                <a class="membership__link" href="#">12 месяцев</a>
+                <button class="membership__button" type="button" data-target="#tab-12">12 месяцев</button>
               </li>
             </ul>
-            <ul class="membership__list-card reset-list">
-              <li class="membership__item-card card">
-                <h3 class="card__title">С тренером</h3>
-                <p class="card__description">12 занятий</p>
-                <div class="card__price price" data-parent="5000">
-                  <p class="price__sum">5000</p>
-                </div>
-                <a class="card__button" href="#">Купить абонемент</a>
-              </li>
-              <li class="membership__item-card card">
-                <h3 class="card__title">Дневной</h3>
-                <p class="card__description">c 8:00 до 17:00</p>
-                <div class="card__price price" data-parent="1700">
-                  <p class="price__sum">1700</p>
-                </div>
-                <a class="card__button" href="#">Купить абонемент</a>
-              </li>
-              <li class="membership__item-card card">
-                <h3 class="card__title">Полный день</h3>
-                <p class="card__description">c 8:00 до 22:00</p>
-                <div class="card__price price" data-parent="2700">
-                  <p class="price__sum">2700</p>
-                </div>
-                <a class="card__button" href="#">Купить абонемент</a>
-              </li>
-            </ul>
+            <div class="membership__wrapper membership__wrapper--current" id="tab-1">
+              <ul class="membership__list-card reset-list">
+                <li class="membership__item-card card">
+                  <h3 class="card__title">С тренером</h3>
+                  <p class="card__description">12 занятий</p>
+                  <div class="card__price price" data-parent="5000">
+                    <p class="price__sum">5000</p>
+                  </div>
+                  <a class="card__button" href="#">Купить абонемент</a>
+                </li>
+                <li class="membership__item-card card">
+                  <h3 class="card__title">Дневной</h3>
+                  <p class="card__description">c 8:00 до 17:00</p>
+                  <div class="card__price price" data-parent="1700">
+                    <p class="price__sum">1700</p>
+                  </div>
+                  <a class="card__button" href="#">Купить абонемент</a>
+                </li>
+                <li class="membership__item-card card">
+                  <h3 class="card__title">Полный день</h3>
+                  <p class="card__description">c 8:00 до 22:00</p>
+                  <div class="card__price price" data-parent="2700">
+                    <p class="price__sum">2700</p>
+                  </div>
+                  <a class="card__button" href="#">Купить абонемент</a>
+                </li>
+              </ul>
+            </div>
+            <div class="membership__wrapper" id="tab-6">
+              <ul class="membership__list-card reset-list">
+                <li class="membership__item-card card">
+                  <h3 class="card__title">С тренером</h3>
+                  <p class="card__description">12 занятий</p>
+                  <div class="card__price price" data-parent="30000">
+                    <p class="price__sum">30000</p>
+                  </div>
+                  <a class="card__button" href="#">Купить абонемент</a>
+                </li>
+                <li class="membership__item-card card">
+                  <h3 class="card__title">Дневной</h3>
+                  <p class="card__description">c 8:00 до 17:00</p>
+                  <div class="card__price price" data-parent="10200">
+                    <p class="price__sum">10200</p>
+                  </div>
+                  <a class="card__button" href="#">Купить абонемент</a>
+                </li>
+                <li class="membership__item-card card">
+                  <h3 class="card__title">Полный день</h3>
+                  <p class="card__description">c 8:00 до 22:00</p>
+                  <div class="card__price price" data-parent="16200">
+                    <p class="price__sum">16200</p>
+                  </div>
+                  <a class="card__button" href="#">Купить абонемент</a>
+                </li>
+              </ul>
+            </div>
+            <div class="membership__wrapper" id="tab-12">
+              <ul class="membership__list-card reset-list">
+                <li class="membership__item-card card">
+                  <h3 class="card__title">С тренером</h3>
+                  <p class="card__description">12 занятий</p>
+                  <div class="card__price price" data-parent="60000">
+                    <p class="price__sum">60000</p>
+                  </div>
+                  <a class="card__button" href="#">Купить абонемент</a>
+                </li>
+                <li class="membership__item-card card">
+                  <h3 class="card__title">Дневной</h3>
+                  <p class="card__description">c 8:00 до 17:00</p>
+                  <div class="card__price price" data-parent="20400">
+                    <p class="price__sum">20400</p>
+                  </div>
+                  <a class="card__button" href="#">Купить абонемент</a>
+                </li>
+                <li class="membership__item-card card">
+                  <h3 class="card__title">Полный день</h3>
+                  <p class="card__description">c 8:00 до 22:00</p>
+                  <div class="card__price price" data-parent="32400">
+                    <p class="price__sum">32400</p>
+                  </div>
+                  <a class="card__button" href="#">Купить абонемент</a>
+                </li>
+              </ul>
+            </div>
             <picture>
               <source type="image/webp" srcset="./img/pancakes.webp, ./img/pancakes@2x.webp 2x">
               <img class="membership__image" src="./img/pancakes.png" srcset="./img/pancakes@2x.png" width="321" height="384" alt="Блины для штанги.">
@@ -459,7 +517,7 @@
                 <input type="text" name="name" id="name" placeholder="Имя" required>
                 <label class="visually-hidden" for="phone">Телефон</label>
                 <input type="tel" name="phone" id="phone" placeholder="Телефон" data-js="phone-number" minlength="11" maxlength="11" required>
-                <button class="form__button">отправить</button>
+                <button class="form__button" type="button">отправить</button>
               </form>
             </div>
           </section>

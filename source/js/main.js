@@ -4,6 +4,7 @@ import {playVideo} from './modules/video';
 import {doWithoutJs} from './modules/slider';
 import {initSwiperCoaches} from './modules/slider-coaches';
 import {initSwiperReviews} from './modules/slider-reviews';
+import {initTabs} from './modules/tabs';
 
 // ---------------------------------
 
@@ -22,6 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     playVideo();
+    initTabs();
     initSwiperCoaches();
     initSwiperReviews();
     doWithoutJs();
