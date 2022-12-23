@@ -2647,7 +2647,11 @@ button,
   margin: 0 300px;
 }
 
-.reviews--nojs {
+.review__list {
+  height: auto;
+}
+
+.review__list--nojs {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;

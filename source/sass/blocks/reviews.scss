@@ -82,10 +82,14 @@
   }
 }
 
-.reviews--nojs {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
+.review__list {
+  height: auto;
+
+  &--nojs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 }
 
 .reviews__item {

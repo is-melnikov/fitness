@@ -5,6 +5,7 @@ import {doWithoutJs} from './modules/slider';
 import {initSwiperCoaches} from './modules/slider-coaches';
 import {initSwiperReviews} from './modules/slider-reviews';
 import {initTabs} from './modules/tabs';
+import {validatePhone} from './modules/phone-validate';
 
 // ---------------------------------
 
@@ -27,6 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initSwiperCoaches();
     initSwiperReviews();
     doWithoutJs();
+    validatePhone();
   });
 });
 
