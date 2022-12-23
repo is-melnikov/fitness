@@ -72,8 +72,8 @@
                     <source type="image/webp" srcset="./img/gym-video.webp 1x, ./img/gym-video@2x.webp 2x">
                     <img class="video__image" src="./img/gym-video.jpg" srcset="./img/gym-video@2x.jpg 2x" width="364" height="228" alt="Подложка - тренажерный зал." loading="lazy">
                   </picture>
-                  <button class="video__button" type="button" aria-label="Включить видео"></button>
                 </a>
+                <button class="video__button" type="button" aria-label="Включить видео"></button>
               </div>
             </div>
           </div>
@@ -420,7 +420,7 @@
           <div class="container container--stocks">
             <h2 class="stocks__title title">Акции</h2>
             <ul class="stocks__list reset-list">
-              <li class="stocks__item stocks__item--image">
+              <li class="stocks__item stocks__item--image stock">
                 <div class="stock__content">
                   <div class="stock__wrapper">
                     <h3>
@@ -517,7 +517,7 @@
                 <input type="text" name="name" id="name" placeholder="Имя" required>
                 <label class="visually-hidden" for="phone">Телефон</label>
                 <input type="tel" name="phone" id="phone" placeholder="Телефон" data-js="phone-number" minlength="11" maxlength="11" required>
-                <button class="form__button" type="button">отправить</button>
+                <button class="form__button" type="submit">отправить</button>
               </form>
             </div>
           </section>
