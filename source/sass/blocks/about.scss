@@ -3,43 +3,43 @@
 
   @include vp-1199 {
     text-align: center;
-    padding: 0 88px;
+    padding: 0 79px 23px 80px;
   }
 
   @include vp-767 {
     text-align: start;
-    padding: 0 15px;
+    padding: 0 15px 13px;
   }
 
   span {
     display: block;
-    margin: 0 0 55px;
+    margin: 0 0 40px;
     font-family: $ff-roboto;
     font-size: 18px;
     line-height: 27px;
 
     @include vp-1199 {
-      margin: 0 0 50px;
+      margin: 0 0 33px;
     }
 
     @include vp-767 {
-      margin: 0 0 40px;
+      margin: 0 0 24px;
     }
   }
 
   p {
-    margin: 0 0 10px;
+    margin: 0 0 7px;
     font-family: $ff-roboto;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
 
     @include vp-1199 {
-      margin: 0 0 50px;
+      margin: 0 0 20px;
     }
 
     @include vp-767 {
-      margin: 0 0 40px;
+      margin: 0 0 20px;
     }
 
     &:last-child {
@@ -51,14 +51,14 @@
 }
 
 .about__title {
-  margin: 0 0 25px;
+  margin: 39px 0 7px;
 
   @include vp-1199 {
-    margin: 0 0 6px;
+    margin: 0 0 0 -16px;
   }
 
   @include vp-767 {
-    margin: 0 0 20px;
+    margin: 0 0 6px;
   }
 }
 
@@ -68,32 +68,47 @@
   @include vp-1199 {
     display: flex;
     justify-content: center;
+    width: 678px;
+    height: 345px;
   }
 
   @include vp-767 {
     display: block;
+    width: auto;
+    height: auto;
   }
 }
 
 .about__image {
-  @include vp-767 {
+  object-fit: cover;
+  object-position: 0 -34px;
+
+  @include vp-1199 {
     width: 100%;
+    height: 100%;
+    aspect-ratio: 678/345;
+  }
+
+  @include vp-767 {
+    object-position: -137px 0;
     aspect-ratio: 320/313;
   }
 }
 
 .about__video {
   position: absolute;
-  bottom: -130px;
+  bottom: -79px;
   left: -63px;
 
   @include vp-1199 {
-    bottom: -32px;
-    left: 195px;
+    bottom: -83px;
+    left: 206px;
   }
 
   @include vp-767 {
-    position: static;
+    position: relative;
     margin: 40px 0 0;
+    bottom: 0;
+    left: 0;
   }
 }

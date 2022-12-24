@@ -6,16 +6,15 @@
     display: grid;
     grid-template-columns: 355px 1fr;
     gap: 85px;
-    align-items: center;
-    padding: 120px 103px 120px 110px;
+    padding: 120px 103px 120px 163px;
 
     @include vp-1199 {
       display: block;
-      padding: 100px 45px;
+      padding: 101px 45px;
     }
 
     @include vp-767 {
-      padding: 70px 0;
+      padding: 63px 0 70px;
     }
   }
 
