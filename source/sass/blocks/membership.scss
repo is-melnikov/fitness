@@ -3,7 +3,15 @@
 }
 
 .membership__title {
-  margin: 0 0 25px;
+  margin: 0 0 22px;
+
+  @include vp-1199 {
+    margin: 0 0 22px -12px;
+  }
+
+  @include vp-767 {
+    margin: -5px 0 25px -12px;
+  }
 }
 
 .membership__wrapper {
@@ -18,7 +26,7 @@
   display: flex;
   gap: 46px;
   width: max-content;
-  margin: 0 auto 40px;
+  margin: 0 auto 38px;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 
   @include vp-1199 {
@@ -51,7 +59,7 @@
 .membership__button {
   position: relative;
   display: flex;
-  padding: 0 0 20px;
+  padding: 0 0 14px;
   color: rgba(16, 38, 84, 0.5);
   border: none;
   background-color: transparent;
@@ -86,14 +94,15 @@
   }
 
   @include vp-767 {
+    gap: 35px;
     padding: 0;
   }
 }
 
 .membership__image {
   position: absolute;
-  bottom: -92px;
-  right: -162px;
+  bottom: -96px;
+  right: -109px;
   display: block;
   transform: rotate(150deg);
 

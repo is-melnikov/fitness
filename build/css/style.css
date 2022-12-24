@@ -1557,7 +1557,7 @@ button,
   -ms-grid-columns: 355px 1fr;
   grid-template-columns: 355px 1fr;
   gap: 85px;
-  padding: 120px 103px 120px 163px;
+  padding: 120px 103px 200px 163px;
 }
 
 .container--membership {
@@ -1855,7 +1855,7 @@ button,
 }
 
 .membership__title {
-  margin: 0 0 25px;
+  margin: 0 0 22px;
 }
 
 .membership__wrapper {
@@ -1874,7 +1874,7 @@ button,
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  margin: 0 auto 40px;
+  margin: 0 auto 38px;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 }
 
@@ -1889,7 +1889,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 0 20px;
+  padding: 0 0 14px;
   color: rgba(16, 38, 84, 0.5);
   border: none;
   background-color: transparent;
@@ -1922,8 +1922,8 @@ button,
 
 .membership__image {
   position: absolute;
-  bottom: -92px;
-  right: -162px;
+  bottom: -96px;
+  right: -109px;
   display: block;
   -webkit-transform: rotate(150deg);
   -ms-transform: rotate(150deg);
@@ -1931,7 +1931,7 @@ button,
 }
 
 .card {
-  padding: 68px 30px;
+  padding: 54px 30px 78px;
   background-color: #ffffff;
   border: 7px solid transparent;
 }
@@ -1950,7 +1950,7 @@ button,
 }
 
 .card__title {
-  margin: 0 0 22px;
+  margin: 0 0 12px;
   font-weight: 700;
   font-size: 26px;
   line-height: 29px;
@@ -1958,7 +1958,7 @@ button,
 }
 
 .card__description {
-  margin: 0 0 59px;
+  margin: 0 0 52px;
   font-size: 16px;
   line-height: 24px;
   color: #495a7d;
@@ -1966,7 +1966,7 @@ button,
 
 .card__price {
   position: relative;
-  margin: 0 auto 120px;
+  margin: 0 auto 117px;
 }
 
 .card__price::before {
@@ -1986,7 +1986,7 @@ button,
 }
 
 .card__button {
-  padding: 27px 44px;
+  padding: 28px 44px 20px;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
@@ -3039,7 +3039,7 @@ button,
 
   .container--about {
     display: block;
-    padding: 101px 45px;
+    padding: 101px 45px 183px;
   }
 
   .container--membership {
@@ -3198,6 +3198,10 @@ button,
     height: 73px;
   }
 
+  .membership__title {
+    margin: 0 0 22px -12px;
+  }
+
   .membership__list {
     gap: 54px;
     margin: 0 auto 45px;
@@ -3222,6 +3226,10 @@ button,
     right: -11px;
     width: 289px;
     height: 345px;
+  }
+
+  .card {
+    padding: 56px 30px 78px;
   }
 
   .promo__text {
@@ -3451,7 +3459,7 @@ button,
   }
 
   .container--about {
-    padding: 63px 0 70px;
+    padding: 63px 0 45px;
   }
 
   .container--membership {
@@ -3589,6 +3597,10 @@ button,
     transform: translateX(-50%);
   }
 
+  .membership__title {
+    margin: -5px 0 25px -12px;
+  }
+
   .membership__list {
     gap: 45px;
     margin: 0 auto 35px;
@@ -3600,6 +3612,7 @@ button,
   }
 
   .membership__list-card {
+    gap: 35px;
     padding: 0;
   }
 
@@ -3607,9 +3620,45 @@ button,
     display: none;
   }
 
+  .card {
+    padding: 43px 30px 70px;
+  }
+
   .card__title {
+    margin: 0 0 9px;
     font-size: 22px;
     line-height: 24px;
+  }
+
+  .card__description {
+    margin: 0 0 33px;
+  }
+
+  .card__price {
+    margin: 0 auto 101px;
+  }
+
+  .card__price::before {
+    top: -24px;
+    font-size: 80px;
+    line-height: 120px;
+  }
+
+  .card__button {
+    padding: 23px 44px 25px;
+  }
+
+  .price__sum {
+    margin: 0 0 0 43px;
+    padding-right: 35px;
+    font-size: 48px;
+  }
+
+  .price__sum::before {
+    top: 4px;
+    width: 24px;
+    height: 33px;
+    background-size: 24px 33px;
   }
 
   .promo__text {
