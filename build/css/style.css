@@ -3211,12 +3211,12 @@ button,
   }
 
   .membership__title {
-    margin: 0 0 22px -12px;
+    margin: 0 0 24px -12px;
   }
 
   .membership__list {
     gap: 54px;
-    margin: 0 auto 45px;
+    margin: 0 auto 43px;
   }
 
   .membership__item {
@@ -3255,22 +3255,31 @@ button,
     -moz-column-gap: 29px;
     column-gap: 29px;
     row-gap: 0;
-    padding: 51px 45px;
+    padding: 52px 45px 51px 45px;
   }
 
-  .promo__text dt:last-of-type {
-    padding: 0 24px 7px 0;
+  .promo__text dl {
+    margin: -4px 0 3px;
   }
 
   .promo__text dt {
-    padding: 0 17px 7px 0;
+    padding: 0 17px 0 0;
     font-size: 12px;
     line-height: 18px;
   }
 
+  .promo__text dt:last-of-type {
+    padding: 0 24px 0 0;
+  }
+
   .promo__text dd {
+    gap: 4px;
     font-size: 24px;
-    line-height: 36px;
+    line-height: 31px;
+  }
+
+  .promo__text dd:not(:last-of-type) {
+    margin: 0 0 3px;
   }
 
   .promo__text p {
@@ -3279,21 +3288,22 @@ button,
   }
 
   .promo__text .promo__button {
-    margin: 20px 0 0;
-    padding: 11px;
+    margin: 30px 0 0;
+    padding: 12px;
     font-size: 10px;
     line-height: 12px;
     border: 2px solid #ffffff;
   }
 
   .promo__title {
+    margin: 0 0 0 7px;
     font-size: 48px;
     line-height: 46px;
   }
 
   .promo__wrapper span {
     font-size: 10px;
-    line-height: 15px;
+    line-height: 13px;
   }
 
   .coaches__title {
@@ -3678,6 +3688,19 @@ button,
     -ms-flex-pack: center;
     justify-content: center;
     padding: 50px 44px;
+  }
+
+  .promo__photo {
+    overflow: hidden;
+    aspect-ratio: 290/292;
+  }
+
+  .promo__image {
+    -o-object-position: -46px 21px;
+    object-position: -46px 21px;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
   }
 
   .coaches__title {
