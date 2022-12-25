@@ -1618,6 +1618,13 @@ button,
   justify-content: space-between;
 }
 
+.navigation-header__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+}
+
 .navigation-header__link {
   text-align: end;
   font-family: "Alumni Sans", "Arial", sans-serif;
