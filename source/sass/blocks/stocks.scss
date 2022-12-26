@@ -22,7 +22,7 @@
 }
 
 .stocks__item {
-  padding: 28px;
+  padding: 20px 28px 28px;
   border: 7px solid transparent;
   border-image: linear-gradient(135deg, #d10a42 0%, #00359f 100%);
   border-image-slice: 1;
@@ -45,5 +45,12 @@
       grid-template-rows: 1fr 1fr;
       grid-column: 1/2;
     }
+  }
+
+  &--free,
+  &--discount {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }

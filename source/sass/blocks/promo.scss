@@ -1,7 +1,7 @@
 .promo__text {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  column-gap: 57px;
+  column-gap: 59px;
   row-gap: 4px;
   padding: 85px 78px;
   background-color: #ed0233;
@@ -23,7 +23,7 @@
   dl {
     display: flex;
     flex-direction: column;
-    margin: -4px 0 10px;
+    margin: -4px 0 8px;
 
     @include vp-1199 {
       margin: -4px 0 3px;
@@ -32,7 +32,7 @@
 
   dt {
     width: max-content;
-    padding: 0 27px 0 0;
+    padding: 0 27px 4px 0;
     border-bottom: 1px solid $color-default-white;
     font-size: 18px;
     line-height: 27px;
@@ -68,7 +68,7 @@
     }
 
     &:not(:last-of-type) {
-      margin: 0 0 11px;
+      margin: -4px 0 12px;
 
       @include vp-1199 {
         margin: 0 0 3px;
