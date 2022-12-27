@@ -7,7 +7,7 @@
   }
 
   @include vp-767 {
-    padding: 70px 15px;
+    padding: 64px 15px 62px;
   }
 }
 
@@ -16,6 +16,10 @@
 
   @include vp-1199 {
     margin: 0 0 30px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 34px;
   }
 }
 
@@ -36,6 +40,7 @@
 
   @include vp-767 {
     grid-template-columns: 1fr;
+    row-gap: 19px;
   }
 
   &::before {
@@ -51,6 +56,7 @@
       left: 66%;
       height: 88%;
       margin: 9px 0;
+    }
 
     @include vp-767 {
       display: none;
@@ -61,6 +67,10 @@
 .contacts__item {
   width: max-content;
   color: $color-sapphire;
+
+  &--work {
+    grid-row: 2/3;
+  }
 
   h3 {
     margin: 0 0 3px;

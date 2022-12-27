@@ -2926,6 +2926,12 @@ button,
   color: #102654;
 }
 
+.contacts__item--work {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
 .contacts__item h3 {
   margin: 0 0 3px;
   font-weight: 700;
@@ -3549,6 +3555,12 @@ button,
     margin-left: 0;
   }
 
+  .contacts__list::before {
+    left: 66%;
+    height: 88%;
+    margin: 9px 0;
+  }
+
   .contacts__item h3 {
     margin: 0 0 6px;
     font-size: 20px;
@@ -3615,7 +3627,7 @@ button,
   }
 
   .container--reviews {
-    padding: 29px 15px 61px;
+    padding: 29px 15px 70px;
   }
 
   .container--main-footer {
@@ -3671,6 +3683,10 @@ button,
     grid-column: 1/3;
     width: 100%;
     margin: 24px 0 0 0;
+  }
+
+  .title--free-lesson {
+    font-weight: 600;
   }
 
   .title {
@@ -4052,28 +4068,42 @@ button,
   }
 
   .free-lesson {
-    padding: 70px 15px;
+    padding: 64px 15px 68px;
+  }
+
+  .free-lesson__title {
+    margin: 0 0 30px;
   }
 
   .form {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 27px;
+  }
+
+  .form input {
+    padding: 10px 10px 6px 0;
   }
 
   .form button {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
+    margin-top: 12px;
   }
 
   .contacts {
-    padding: 70px 15px;
+    padding: 64px 15px 62px;
+  }
+
+  .contacts__title {
+    margin: 0 0 34px;
   }
 
   .contacts__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    row-gap: 19px;
   }
 
   .contacts__list::before {
