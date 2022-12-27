@@ -17,5 +17,3 @@ const doWithoutJs = () => {
 };
 
 export {doWithoutJs};
-
-
