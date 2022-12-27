@@ -1595,7 +1595,7 @@ button,
   padding: 58px 103px 120px;
 }
 
-.container--application {
+.container--free-lesson {
   max-width: 477px;
   margin: 0 0 0 auto;
 }
@@ -1753,7 +1753,7 @@ button,
   color: #102654;
 }
 
-.title--application {
+.title--free-lesson {
   font-weight: 800;
   line-height: 84px;
   color: #ffffff;
@@ -2785,12 +2785,12 @@ button,
   line-height: 22px;
 }
 
-.application {
+.free-lesson {
   padding: 56px 169px 70px 103px;
   background-color: #102654;
 }
 
-.application__title {
+.free-lesson__title {
   margin: 0 0 14px;
 }
 
@@ -3132,7 +3132,7 @@ button,
     padding: 42px 45px 100px;
   }
 
-  .container--application {
+  .container--free-lesson {
     margin: 0;
   }
 
@@ -3202,6 +3202,10 @@ button,
   .intro__image {
     min-width: 324px;
     min-height: 390px;
+  }
+
+  .title--free-lesson {
+    font-weight: 700;
   }
 
   .title {
@@ -3515,12 +3519,12 @@ button,
     padding: 62px 65px 57px;
   }
 
-  .application {
-    padding: 70px 133px 70px 163px;
+  .free-lesson {
+    padding: 62px 163px 70px 133px;
   }
 
-  .application__title {
-    margin: 0 0 50px;
+  .free-lesson__title {
+    margin: 0 0 28px;
   }
 
   .form {
@@ -3530,22 +3534,23 @@ button,
   }
 
   .contacts {
-    padding: 70px 133px 70px;
+    padding: 62px 133px 62px;
   }
 
   .contacts__title {
-    margin: 0 0 50px;
+    margin: 0 0 30px;
   }
 
   .contacts__list {
-    -webkit-column-gap: 48px;
-    -moz-column-gap: 48px;
-    column-gap: 48px;
-    row-gap: 35px;
+    -webkit-column-gap: 96px;
+    -moz-column-gap: 96px;
+    column-gap: 96px;
+    row-gap: 20px;
+    margin-left: 0;
   }
 
   .contacts__item h3 {
-    margin: 0 0 20px;
+    margin: 0 0 6px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -4046,7 +4051,7 @@ button,
     text-align: center;
   }
 
-  .application {
+  .free-lesson {
     padding: 70px 15px;
   }
 
