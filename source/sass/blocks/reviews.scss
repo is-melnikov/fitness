@@ -1,9 +1,19 @@
+.reviews--nojs {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
 .reviews__title {
-  margin: 0 0 37px;
+  margin: 0 0 37px 5px;
   text-align: center;
 
   @include vp-1199 {
-    margin: 0 0 50px;
+    margin: 0 0 40px -5px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 42px -3px;
   }
 }
 
@@ -17,19 +27,20 @@
   cursor: pointer;
 
   @include vp-767 {
+    top: 51%;
     width: 10px;
     height: 19px;
   }
 
   &--prev {
-    left: 347px;
+    left: 345px;
 
     @include vp-1199 {
-      left: 40px;
+      left: 45px;
     }
 
     @include vp-767 {
-      left: 22px;
+      left: 15px;
     }
   }
 
@@ -38,11 +49,11 @@
     transform: rotate(180deg);
 
     @include vp-1199 {
-      right: 40px;
+      right: 45px;
     }
 
     @include vp-767 {
-      right: 22px;
+      right: 15px;
     }
   }
 
@@ -82,39 +93,20 @@
   }
 }
 
-.review__list {
+.reviews__list {
   height: auto;
-
-  &--nojs {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
 }
 
 .reviews__item {
-  padding: 62px 62px;
+  height: auto;
+  padding: 62px 62px 57px;
   background: #1c3374;
 
   @include vp-1199 {
-    padding: 62px 65px;
+    padding: 62px 65px 57px;
   }
 
   @include vp-767 {
-    padding: 40px 25px;
-  }
-}
-
-.review__quote {
-  display: grid;
-  grid-template-columns: 80px 1fr;
-  column-gap: 28px;
-  row-gap: 25px;
-  margin: 0;
-
-  @include vp-767 {
-    grid-template-columns: 84px 1fr;
-    column-gap: 15px;
-    row-gap: 20px;
+    padding: 40px 25px 36px;
   }
 }
