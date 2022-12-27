@@ -6,6 +6,7 @@
     display: grid;
     grid-template-columns: 355px 1fr;
     gap: 85px;
+    align-items: flex-start;
     padding: 120px 103px 200px 163px;
 
     @include vp-1199 {

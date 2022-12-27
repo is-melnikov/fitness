@@ -1,9 +1,3 @@
-.reviews--nojs {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
-}
-
 .reviews__title {
   margin: 0 0 37px 5px;
   text-align: center;
@@ -95,6 +89,12 @@
 
 .reviews__list {
   height: auto;
+
+  &--nojs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 }
 
 .reviews__item {

@@ -5,7 +5,7 @@ const BUTTONS_REVIEWS = document.querySelectorAll('.reviews__button');
 
 const doWithoutJs = () => {
   COACHES_LIST.classList.remove('coaches__nojs');
-  REVIEWS_LIST.classList.remove('reviews--nojs');
+  REVIEWS_LIST.classList.remove('reviews__list--nojs');
 
   BUTTONS_COACHES.forEach((button) => {
     button.classList.remove('coaches__button--nojs');
