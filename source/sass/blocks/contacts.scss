@@ -1,5 +1,5 @@
 .contacts {
-  padding: 56px 159px 70px 120px;
+  padding: 56px 159px 60px 120px;
   border-top: 1px solid #74819c;
 
   @include vp-1199 {
@@ -12,7 +12,7 @@
 }
 
 .contacts__title {
-  margin: 0 0 43px;
+  margin: 0 0 37px;
 
   @include vp-1199 {
     margin: 0 0 50px;
@@ -24,8 +24,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  column-gap: 60px;
-  row-gap: 30px;
+  column-gap: 121px;
+  row-gap: 16px;
+  margin-left: 4px;
 
   @include vp-1199 {
     column-gap: 48px;
@@ -56,7 +57,7 @@
   color: $color-sapphire;
 
   h3 {
-    margin: 0 0 15px;
+    margin: 0 0 3px;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;

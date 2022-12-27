@@ -1,5 +1,5 @@
 .application {
-  padding: 56px 103px 70px;
+  padding: 56px 169px 70px 103px;
   background-color: $color-sapphire;
 
   @include vp-1199 {
@@ -12,7 +12,7 @@
 }
 
 .application__title {
-  margin: 0 0 24px;
+  margin: 0 0 14px;
 
   @include vp-1199 {
     margin: 0 0 50px;
