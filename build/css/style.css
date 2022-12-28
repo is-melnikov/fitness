@@ -3124,6 +3124,12 @@ button,
   }
 */
 
+@media (max-width: 1339px) {
+  .intro {
+    margin: 0;
+  }
+}
+
 @media (max-width: 1199px) {
   .two-blocks-wrapper {
     -ms-grid-columns: 1fr;
@@ -3197,7 +3203,6 @@ button,
 
   .intro {
     gap: 30px;
-    margin: 0;
     padding: 0;
   }
 
