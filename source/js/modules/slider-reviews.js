@@ -1,6 +1,5 @@
 const initSwiperReviews = () => {
-  // eslint-disable-next-line
-  new Swiper('.reviews__swiper', {
+  const swiper = new Swiper('.reviews__swiper', {
     direction: 'horizontal',
     loop: false,
     allowTouchMove: true,

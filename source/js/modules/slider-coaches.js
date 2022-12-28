@@ -1,6 +1,5 @@
 const initSwiperCoaches = () => {
-  // eslint-disable-next-line
-  new Swiper('.coaches__swiper', {
+  const swiper = new Swiper('.coaches__swiper', {
     navigation: {
       nextEl: '.coaches__button--next',
       prevEl: '.coaches__button--prev',
