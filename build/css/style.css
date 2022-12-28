@@ -1865,18 +1865,10 @@ button,
 }
 
 .membership__title {
-  margin: 0 0 22px;
+  margin: 0 0 16px;
 }
 
-.membership__wrapper {
-  display: none;
-}
-
-.membership__wrapper--current {
-  display: block;
-}
-
-.membership__list {
+.membership__tabs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1888,18 +1880,15 @@ button,
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 }
 
-.membership__item {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 20px;
-  line-height: 30px;
-}
-
 .membership__button {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0 0 14px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
   color: rgba(16, 38, 84, 0.5);
   border: none;
   background-color: transparent;
@@ -1928,6 +1917,15 @@ button,
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+}
+
+.membership__wrapper {
+  display: none;
+}
+
+.membership__wrapper--current {
+  display: -ms-grid;
+  display: grid;
 }
 
 .membership__image {
@@ -1976,7 +1974,7 @@ button,
 
 .card__price {
   position: relative;
-  margin: 0 auto 117px;
+  margin: 0 auto 108px;
 }
 
 .card__price::before {
@@ -1993,6 +1991,27 @@ button,
   line-height: 69px;
   color: #e8e8e8;
   opacity: 0.48;
+}
+
+.card__price::after {
+  content: attr(data-parent);
+  position: relative;
+  top: 36px;
+  left: 0;
+  z-index: 1;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  padding-right: 44px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 42px;
+  color: #103aae;
+  background-image: url("../img/sprite/rouble.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 30px 42px;
 }
 
 .card__button {
@@ -3287,15 +3306,15 @@ button,
   }
 
   .membership__title {
-    margin: 0 0 24px -12px;
+    margin: 0 0 20px -12px;
   }
 
-  .membership__list {
+  .membership__tabs {
     gap: 54px;
     margin: 0 auto 43px;
   }
 
-  .membership__item {
+  .membership__button {
     font-size: 18px;
     line-height: 27px;
   }
@@ -3318,6 +3337,10 @@ button,
 
   .card {
     padding: 56px 30px 62px;
+  }
+
+  .card__price {
+    margin: 0 auto 109px;
   }
 
   .promo__text {
@@ -3764,15 +3787,16 @@ button,
   }
 
   .membership__title {
-    margin: -5px 0 25px -12px;
+    margin: -5px 0 21px -12px;
   }
 
-  .membership__list {
+  .membership__tabs {
     gap: 45px;
     margin: 0 auto 35px;
   }
 
-  .membership__item {
+  .membership__button {
+    padding: 0 0 12px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -3801,13 +3825,20 @@ button,
   }
 
   .card__price {
-    margin: 0 auto 101px;
+    margin: 0 auto 98px;
   }
 
   .card__price::before {
     top: -24px;
     font-size: 80px;
     line-height: 120px;
+  }
+
+  .card__price::after {
+    margin: 0 0 0 4px;
+    padding-right: 35px;
+    font-size: 48px;
+    background-size: 24px 33px;
   }
 
   .card__button {
