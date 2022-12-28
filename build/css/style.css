@@ -2228,6 +2228,10 @@ button,
   stroke: #afafaf;
 }
 
+*:-webkit-scrollbar {
+  width: 2px;
+}
+
 .coach {
   position: relative;
   aspect-ratio: 260/294;
@@ -2251,7 +2255,8 @@ button,
 
 .coach:hover .coach__content,
 .coach:focus-within .coach__content {
-  overflow: scroll;
+  overflow-y: scroll;
+  scrollbar-width: thin;
   background: rgba(16, 38, 84, 0.89);
 }
 

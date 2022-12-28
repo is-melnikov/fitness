@@ -1,3 +1,7 @@
+*:-webkit-scrollbar {
+  width: 2px;
+}
+
 .coach {
   position: relative;
   aspect-ratio: 260/294;
@@ -33,7 +37,8 @@
     }
 
     .coach__content {
-      overflow: scroll;
+      overflow-y: scroll;
+      scrollbar-width: thin;
       background: rgba(16, 38, 84, 0.89);
     }
   }
