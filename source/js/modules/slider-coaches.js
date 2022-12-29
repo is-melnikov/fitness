@@ -27,6 +27,12 @@ const initSwiperCoaches = () => {
       },
     },
   });
+
+  const slidesDuplicate = document.querySelectorAll('.swiper-slide-duplicate');
+
+  slidesDuplicate.forEach((slide) => {
+    slide.removeAttribute('tabindex');
+  });
 };
 
 export {initSwiperCoaches};
