@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 1fr 97px;
   gap: 10%;
-  align-items: center;
 
   @include vp-1199 {
     gap: 52px;
@@ -20,7 +19,6 @@
   gap: 13.9%;
 
   @include vp-1199 {
-    align-items: center;
     gap: 61px;
   }
 
@@ -48,6 +46,7 @@
 
   &--navsite {
     justify-self: center;
+    margin-top: 3px;
   }
 }
 
@@ -89,5 +88,13 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.navigation-footer__social {
+  margin: -3px 0 0;
+
+  @include vp-767 {
+    margin: 0;
   }
 }
