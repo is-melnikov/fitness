@@ -78,6 +78,7 @@
                     <source type="image/webp" srcset="./img/gym-video.webp 1x, ./img/gym-video@2x.webp 2x">
                     <img class="video__image" src="./img/gym-video.jpg" srcset="./img/gym-video@2x.jpg 2x" width="364" height="228" alt="Подложка - тренажерный зал." loading="lazy">
                   </picture>
+                  <iframe class="video__iframe" width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw" frameborder="0"></iframe>
                 </a>
                 <button class="video__button" type="button" aria-label="Включить видео"></button>
               </div>
@@ -87,12 +88,13 @@
         <section class="membership" id="membership">
           <div class="container container--membership">
             <h2 class="membership__title title">Абонементы</h2>
-            <div class="membership__tabs">
+            <div class="membership__tabs membership__tabs--nojs">
               <button class="membership__button membership__button--current" type="button" data-target="#tab-1">1 месяц</button>
               <button class="membership__button" type="button" data-target="#tab-6">6 месяцев</button>
               <button class="membership__button" type="button" data-target="#tab-12">12 месяцев</button>
             </div>
-            <ul class="membership__list-card membership__wrapper membership__wrapper--current reset-list" id="tab-1">
+            <h3 class="membership__list-title membership__list-title--nojs">1 месяц</h3>
+            <ul class="membership__list-card membership__wrapper membership__wrapper--current membership__wrapper--nojs reset-list" id="tab-1">
               <li class="membership__item-card card">
                 <h3 class="card__title">С тренером</h3>
                 <p class="card__description">12 занятий</p>
@@ -112,7 +114,8 @@
                 <a class="card__button" href="#">Купить абонемент</a>
               </li>
             </ul>
-            <ul class="membership__list-card membership__wrapper reset-list" id="tab-6">
+            <h3 class="membership__list-title membership__list-title--nojs">6 месяцев</h3>
+            <ul class="membership__list-card membership__wrapper membership__wrapper--nojs reset-list" id="tab-6">
               <li class="membership__item-card card">
                 <h3 class="card__title">С тренером</h3>
                 <p class="card__description">12 занятий</p>
@@ -132,7 +135,8 @@
                 <a class="card__button" href="#">Купить абонемент</a>
               </li>
             </ul>
-            <ul class="membership__list-card membership__wrapper reset-list" id="tab-12">
+            <h3 class="membership__list-title membership__list-title--nojs">12 месяцев</h3>
+            <ul class="membership__list-card membership__wrapper membership__wrapper--nojs reset-list" id="tab-12">
               <li class="membership__item-card card">
                 <h3 class="card__title">С тренером</h3>
                 <p class="card__description">12 занятий</p>

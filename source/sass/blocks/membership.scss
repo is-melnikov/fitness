@@ -21,6 +21,10 @@
   margin: 0 auto 38px;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 
+  &--nojs {
+    display: none;
+  }
+
   @include vp-1199 {
     gap: 54px;
     margin: 0 auto 43px;
@@ -71,6 +75,18 @@
   }
 }
 
+.membership__list-title {
+  display: none;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  color: $color-sapphire;
+
+  &--nojs {
+    display: block;
+  }
+}
+
 .membership__list-card {
   position: relative;
   z-index: 1;
@@ -94,6 +110,10 @@
   display: none;
 
   &--current {
+    display: grid;
+  }
+
+  &--nojs {
     display: grid;
   }
 }
