@@ -1666,9 +1666,9 @@ button,
   grid-template-columns: auto 1fr;
   -ms-grid-rows: auto 1fr;
   grid-template-rows: auto 1fr;
-  -webkit-column-gap: 17px;
-  -moz-column-gap: 17px;
-  column-gap: 17px;
+  -webkit-column-gap: 16px;
+  -moz-column-gap: 16px;
+  column-gap: 16px;
   max-width: 400px;
   margin: 96px 0 0;
   color: #ffffff;
@@ -1699,7 +1699,7 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 0 0 14px 66px;
+  margin: 0 0 16px 63px;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 48px;
@@ -1827,6 +1827,7 @@ button,
   display: block;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 .video__link::before {
@@ -2458,7 +2459,7 @@ button,
   color: #ffffff;
 }
 
-.advantages__item--middle b {
+.advantages__item--middle strong {
   display: block;
   margin: 0 0 4px;
   font-weight: 700;
@@ -2494,7 +2495,7 @@ button,
   gap: 3px;
 }
 
-.advantages__data b {
+.advantages__data strong {
   font-style: normal;
   font-weight: 700;
   font-size: 71px;
@@ -2701,8 +2702,8 @@ button,
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  -o-object-position: -48px 0;
-  object-position: -48px 0;
+  -o-object-position: -42px 0;
+  object-position: -42px 0;
 }
 
 .reviews__title {
@@ -2939,12 +2940,13 @@ button,
 .contacts__list::before {
   content: "";
   position: absolute;
-  left: 50%;
+  left: 58%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 1px;
-  height: 100%;
+  height: 86%;
+  margin-top: 6px;
   background-color: #74819c;
 }
 
@@ -3219,9 +3221,9 @@ button,
   .intro__text {
     max-width: 324px;
     margin: 33px 0 0;
-    -webkit-column-gap: 11px;
-    -moz-column-gap: 11px;
-    column-gap: 11px;
+    -webkit-column-gap: 12px;
+    -moz-column-gap: 12px;
+    column-gap: 12px;
   }
 
   .intro__list {
@@ -3239,6 +3241,7 @@ button,
 
   .intro__title {
     text-transform: none;
+    font-weight: 700;
     font-size: 72px;
     line-height: 86px;
   }
@@ -3503,7 +3506,7 @@ button,
     padding: 35px 135px 20px;
   }
 
-  .advantages__item--middle b {
+  .advantages__item--middle strong {
     margin: 0;
   }
 
@@ -3513,7 +3516,7 @@ button,
     line-height: 33px;
   }
 
-  .advantages__data b {
+  .advantages__data strong {
     font-size: 58px;
     line-height: 48px;
   }
@@ -3731,7 +3734,7 @@ button,
   }
 
   .intro__city {
-    margin: 0 3px 12px 0;
+    margin: 0 6px 12px 0;
     font-size: 28px;
     line-height: 34px;
   }
@@ -3800,6 +3803,14 @@ button,
     width: 100%;
     height: auto;
     aspect-ratio: 320/167;
+  }
+
+  .video__image {
+    -o-object-position: 0 20px;
+    object-position: 0 20px;
+    -webkit-transform: scaleY(1.3);
+    -ms-transform: scaleY(1.3);
+    transform: scaleY(1.3);
   }
 
   .video__button {
@@ -3983,7 +3994,7 @@ button,
     padding: 37px 74px 42px;
   }
 
-  .advantages__item--middle b {
+  .advantages__item--middle strong {
     margin: 0 0 -4px;
   }
 
