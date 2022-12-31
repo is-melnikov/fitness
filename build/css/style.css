@@ -2000,7 +2000,7 @@ button,
 }
 
 .card__title {
-  margin: 0 0 12px;
+  margin: 0 0 10px;
   font-weight: 700;
   font-size: 26px;
   line-height: 29px;
@@ -2008,7 +2008,7 @@ button,
 }
 
 .card__description {
-  margin: 0 0 52px;
+  margin: 0 0 54px;
   font-size: 16px;
   line-height: 24px;
   color: #495a7d;
@@ -2016,7 +2016,16 @@ button,
 
 .card__price {
   position: relative;
-  margin: 0 auto 108px;
+  z-index: 1;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto 81px;
+  padding-top: 35px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 42px;
+  color: #103aae;
 }
 
 .card__price::before {
@@ -2027,7 +2036,7 @@ button,
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  z-index: 0;
+  z-index: -1;
   font-weight: 700;
   font-size: 100px;
   line-height: 69px;
@@ -2035,32 +2044,11 @@ button,
   opacity: 0.48;
 }
 
-.card__price::after {
-  content: attr(data-parent);
-  position: relative;
-  top: 36px;
-  left: 0;
-  z-index: 1;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin: 0 auto;
-  padding-right: 44px;
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 42px;
-  color: #103aae;
-  background-image: url("../img/sprite/rouble.svg");
-  background-repeat: no-repeat;
-  background-position: center right;
-  background-size: 30px 42px;
-}
-
 .card__button {
   display: block;
   width: 206px;
   margin: -22px auto 0;
-  padding: 28px 44px 20px;
+  padding: 25px 44px 23px;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
@@ -2078,33 +2066,6 @@ button,
   color: #ffffff;
   background: -o-linear-gradient(352.95deg, #ed0335 17.6%, #003eb7 95.31%);
   background: linear-gradient(97.05deg, #ed0335 17.6%, #003eb7 95.31%);
-}
-
-.price__sum {
-  position: relative;
-  top: 36px;
-  left: 0;
-  z-index: 1;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin: 0 auto;
-  padding-right: 44px;
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 42px;
-  color: #103aae;
-}
-
-.price__sum::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 30px;
-  height: 42px;
-  background-image: url("../img/sprite/rouble.svg");
-  background-repeat: no-repeat;
 }
 
 .promo__text {
@@ -3340,6 +3301,7 @@ button,
   .membership__list-card {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    gap: 42px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -3357,8 +3319,12 @@ button,
     padding: 56px 30px 62px;
   }
 
+  .card__description {
+    margin: 0 0 52px;
+  }
+
   .card__price {
-    margin: 0 auto 109px;
+    margin: 0 auto 82px;
   }
 
   .promo__text {
@@ -3859,7 +3825,8 @@ button,
   }
 
   .card__price {
-    margin: 0 auto 98px;
+    margin: 0 auto 67px;
+    font-size: 48px;
   }
 
   .card__price::before {
@@ -3868,29 +3835,14 @@ button,
     line-height: 120px;
   }
 
-  .card__price::after {
-    margin: 0 0 0 4px;
-    padding-right: 35px;
-    font-size: 48px;
-    background-size: 24px 33px;
-  }
-
   .card__button {
     margin: -19px auto 0;
-    padding: 27px 44px 22px;
+    padding: 24px 44px;
   }
 
-  .price__sum {
-    margin: 0 0 0 43px;
-    padding-right: 35px;
-    font-size: 48px;
-  }
-
-  .price__sum::before {
-    top: 4px;
+  .price__icon {
     width: 24px;
     height: 33px;
-    background-size: 24px 33px;
   }
 
   .promo__text {

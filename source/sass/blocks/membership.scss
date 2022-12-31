@@ -96,6 +96,7 @@
 
   @include vp-1199 {
     grid-template-columns: 1fr;
+    gap: 42px;
     justify-content: center;
     padding: 0 118px;
   }
