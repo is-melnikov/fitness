@@ -1547,7 +1547,7 @@ button,
 }
 
 .container {
-  max-width: 1366px;
+  max-width: 1160px;
   margin: 0 auto;
 }
 
@@ -1560,12 +1560,12 @@ button,
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  padding: 120px 103px 200px 163px;
+  padding: 120px 0 200px 60px;
 }
 
 .container--membership {
   position: relative;
-  padding: 120px 103px;
+  padding: 120px 0;
   text-align: center;
 }
 
@@ -1577,25 +1577,25 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 120px 103px 53px;
+  padding: 120px 0 53px;
 }
 
 .container--coaches {
   position: relative;
-  padding: 53px 103px 91px;
+  padding: 53px 0 91px;
 }
 
 .container--advantages {
-  padding: 146px 103px 56px;
+  padding: 146px 0 56px;
 }
 
 .container--stocks {
-  padding: 149px 103px 60px;
+  padding: 149px 0 60px;
 }
 
 .container--reviews {
   position: relative;
-  padding: 58px 103px 120px;
+  padding: 58px 0 120px;
 }
 
 .container--free-lesson {
@@ -1609,7 +1609,7 @@ button,
 }
 
 .container--main-footer {
-  padding: 43px 104px 32px 103px;
+  padding: 43px 0 32px;
 }
 
 .navigation-header {
@@ -1973,7 +1973,7 @@ button,
 .membership__image {
   position: absolute;
   bottom: -96px;
-  right: -109px;
+  right: -212px;
   display: block;
   -webkit-transform: rotate(150deg);
   -ms-transform: rotate(150deg);

@@ -1,5 +1,5 @@
 .container {
-  max-width: 1366px;
+  max-width: 1160px;
   margin: 0 auto;
 
   &--about {
@@ -7,7 +7,7 @@
     grid-template-columns: 355px 1fr;
     gap: 85px;
     align-items: flex-start;
-    padding: 120px 103px 200px 163px;
+    padding: 120px 0 200px 60px;
 
     @include vp-1199 {
       display: block;
@@ -21,7 +21,7 @@
 
   &--membership {
     position: relative;
-    padding: 120px 103px;
+    padding: 120px 0;
     text-align: center;
 
     @include vp-1199 {
@@ -37,7 +37,7 @@
     display: grid;
     grid-template-columns: 1fr 660px;
     justify-content: center;
-    padding: 120px 103px 53px;
+    padding: 120px 0 53px;
 
     @include vp-1199 {
       grid-template-columns: 1fr 2fr;
@@ -52,7 +52,7 @@
 
   &--coaches {
     position: relative;
-    padding: 53px 103px 91px;
+    padding: 53px 0 91px;
 
     @include vp-1199 {
       padding: 50px 101px 100px;
@@ -64,7 +64,7 @@
   }
 
   &--advantages {
-    padding: 146px 103px 56px;
+    padding: 146px 0 56px;
 
     @include vp-1199 {
       padding: 93px 45px 91px;
@@ -76,7 +76,7 @@
   }
 
   &--stocks {
-    padding: 149px 103px 60px;
+    padding: 149px 0 60px;
 
     @include vp-1199 {
       padding: 86px 45px 50px;
@@ -89,7 +89,7 @@
 
   &--reviews {
     position: relative;
-    padding: 58px 103px 120px;
+    padding: 58px 0 120px;
 
     @include vp-1199 {
       padding: 42px 45px 100px;
@@ -119,7 +119,7 @@
   }
 
   &--main-footer {
-    padding: 43px 104px 32px 103px;
+    padding: 43px 0 32px;
 
     @include vp-1199 {
       padding: 47px 39px 44px 45px;
