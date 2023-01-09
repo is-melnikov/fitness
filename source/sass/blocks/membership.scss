@@ -16,8 +16,10 @@
 
 .membership__tabs {
   display: flex;
+  flex-wrap: wrap;
   gap: 46px;
   width: max-content;
+  max-width: 87%;
   margin: 0 auto 38px;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 
@@ -32,6 +34,7 @@
 
   @include vp-767 {
     gap: 45px;
+    max-width: 100%;
     margin: 0 auto 35px;
   }
 }

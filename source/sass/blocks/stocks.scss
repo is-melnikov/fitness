@@ -57,8 +57,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 30px;
 
     @include vp-767 {
+      gap: 20px;
       padding: 30px 28px 40px;
     }
   }

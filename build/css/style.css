@@ -1894,10 +1894,13 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 46px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  max-width: 87%;
   margin: 0 auto 38px;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 }
@@ -2211,7 +2214,7 @@ button,
 
 .coaches__button {
   position: absolute;
-  top: 53%;
+  top: 53.3%;
   z-index: 4;
   border: none;
   padding: 0;
@@ -2559,6 +2562,7 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  gap: 30px;
 }
 
 .stock {
@@ -2945,6 +2949,7 @@ button,
 }
 
 .contacts__item a {
+  display: block;
   font-size: 14px;
   line-height: 21px;
   color: inherit;
@@ -3804,6 +3809,7 @@ button,
 
   .membership__tabs {
     gap: 45px;
+    max-width: 100%;
     margin: 0 auto 35px;
   }
 
@@ -4005,6 +4011,7 @@ button,
 
   .stocks__item--free,
   .stocks__item--discount {
+    gap: 20px;
     padding: 30px 28px 40px;
   }
 
