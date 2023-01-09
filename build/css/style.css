@@ -3149,6 +3149,7 @@ button,
   }
 
   .container--free-lesson {
+    max-width: 100%;
     margin: 0;
   }
 
@@ -3797,13 +3798,6 @@ button,
     transform: scaleY(1.3);
   }
 
-  .video__button {
-    top: 46px;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
-
   .membership__title {
     margin: -5px 0 21px -12px;
   }
@@ -4002,8 +3996,8 @@ button,
   .stocks__item--image {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    -ms-grid-rows: auto 1fr;
+    grid-template-rows: auto 1fr;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;

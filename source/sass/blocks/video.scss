@@ -76,11 +76,6 @@
     height: 73px;
   }
 
-  @include vp-767 {
-    top: 46px;
-    transform: translateX(-50%);
-  }
-
   &:hover {
     opacity: 0.5;
   }
