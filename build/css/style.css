@@ -1582,7 +1582,8 @@ button,
 
 .container--coaches {
   position: relative;
-  padding: 53px 0 91px;
+  max-width: 1366px;
+  padding: 53px 103px 91px;
 }
 
 .container--advantages {
@@ -2224,9 +2225,6 @@ button,
 
 .coaches__button--next {
   right: 47px;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
 }
 
 .coaches__button--nojs {
@@ -2239,6 +2237,12 @@ button,
 
 .coaches__icon {
   stroke: #afafaf;
+}
+
+.coaches__icon--next {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 *:-webkit-scrollbar {
@@ -2674,7 +2678,7 @@ button,
 
 .reviews__button {
   position: absolute;
-  top: 50%;
+  top: 264px;
   z-index: 4;
   border: none;
   padding: 0;
@@ -2683,14 +2687,11 @@ button,
 }
 
 .reviews__button--prev {
-  left: 345px;
+  left: 244px;
 }
 
 .reviews__button--next {
-  right: 347px;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+  right: 244px;
 }
 
 .reviews__button--nojs {
@@ -2708,6 +2709,12 @@ button,
 
 .reviews__icon {
   stroke: #afafaf;
+}
+
+.reviews__icon--next {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .reviews__swiper {
@@ -3403,6 +3410,14 @@ button,
     top: 50%;
   }
 
+  .coaches__button--prev {
+    left: 45px;
+  }
+
+  .coaches__button--next {
+    right: 45px;
+  }
+
   .coach {
     aspect-ratio: 268/294;
   }
@@ -3532,6 +3547,10 @@ button,
     margin: 0 0 40px -5px;
   }
 
+  .reviews__button {
+    top: 236px;
+  }
+
   .reviews__button--prev {
     left: 45px;
   }
@@ -3658,7 +3677,7 @@ button,
   }
 
   .container--main-footer {
-    padding: 46px 15px;
+    padding: 46px 15px 53px;
   }
 
   .navigation-header__link {
